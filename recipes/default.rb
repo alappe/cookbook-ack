@@ -30,7 +30,7 @@ when 'debian'
   end
 
   if node['ack']['symlink_to_ack']
-    print 'Symlink wanted… will do!'
+    print 'Symlink wanted... will do!'
     link '/usr/bin/ack' do
       to '/usr/bin/ack-grep'
     end
