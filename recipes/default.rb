@@ -30,7 +30,7 @@ when 'debian'
   end
 
   if node['ack']['symlink_to_ack']
-    print 'Symlink wanted... will do!'
+    Chef::Log.info('Symlinking /usr/bin/ack-grep to /usr/bin/ack')
     link '/usr/bin/ack' do
       to '/usr/bin/ack-grep'
     end
